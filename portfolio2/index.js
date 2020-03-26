@@ -1,5 +1,5 @@
 setTimeout(function () {
-    $(window).scrollTop(3400);
+    $(window).scrollTop(0);
 }, 0);
 
 //첫 화면 애니메이션
