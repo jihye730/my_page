@@ -104,7 +104,7 @@ a {
     transition:transform 1s;
 }
 /*.bg-active*/
-body .bg {
+body.bg-active .bg {
     transform:scale(30);
 }
 .sunset {
