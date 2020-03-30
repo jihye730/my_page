@@ -126,6 +126,8 @@ body.bg-active .bg {
 /* wrap1 시작 */
 .wrap1 {
     color: #fff;
+    overflow: hidden;
+    position: relative;
 }
 
 .wrap1 .main {
@@ -202,6 +204,13 @@ html.not-scroll-top-0 .wrap1 .main .menu-box li.hide {
     }
 }
 
+
+.wrap1 .main .menu-box ul li a {
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+}
+
 @media (max-width:660px) {
     .wrap1 .main .menu-box {
         width: 400px;
@@ -212,14 +221,8 @@ html.not-scroll-top-0 .wrap1 .main .menu-box li.hide {
     }
 
     .wrap1 > .main > .menu-box > ul > li > a {
-        font-size: 9px;
+        font-size: 14px;
     }
-}
-
-.wrap1 .main .menu-box ul li a {
-    font-weight: 400;
-    font-size: 18px;
-    display: block;
 }
 
 .wrap1 .main .content {
@@ -375,7 +378,7 @@ body.bg-active .wrap1 .main .content .concept > div {
 }
 
 /* page1 my profile 반응형 */
-@media(max-width:1015px) {
+@media (max-width:1015px) {
     .wrap2 .page1 .row .cell:first-child > .row > .cell {
         width: 100%;
         text-align: center;
