@@ -187,9 +187,32 @@ html.not-scroll-top-0 .wrap1 .main .menu-box li.hide {
     padding: 0 50px;
 }
 
-@media(max-width:870px) {
+/* main top menu box 반응형 */
+@media (max-width:990px) and (min-width:661px) {
+    .wrap1 .main .menu-box {
+        width: 600px;
+    }
+
+    .wrap1 .main .menu-box ul > li {
+        padding: 0 20px;
+    }
+
+    .wrap1 .main .menu-box ul > li > a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:660px) {
+    .wrap1 .main .menu-box {
+        width: 400px;
+    }
+
     .wrap1 .main .menu-box ul li {
-        padding: 0 25px;
+        padding: 0 10px;
+    }
+
+    .wrap1 > .main > .menu-box > ul > li > a {
+        font-size: 9px;
     }
 }
 
@@ -315,13 +338,12 @@ body.bg-active .wrap1 .main .content .concept > div {
 }
 
 .wrap2 .page1 > .row {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .wrap2 .page1 .row .row {
     margin: 0 auto;
-    width: 700px;
 }
 
 .wrap2 .page1 .profile > img {
@@ -350,6 +372,36 @@ body.bg-active .wrap1 .main .content .concept > div {
 
 .wrap2 .page1 .info div:nth-child(4) {
     padding-left: 30px;
+}
+
+/* page1 my profile 반응형 */
+@media(max-width:1015px) {
+    .wrap2 .page1 .row .cell:first-child > .row > .cell {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrap2 .page1 > .row > .cell {
+        max-width: 100%;
+    }
+
+    .wrap2 .page1 > .row > .cell:last-child .m-hide {
+        display: none;
+    }
+
+    .wrap2 .page1 > .row > .cell:last-child .title {
+        position: relative;
+        top: -800px;
+        left: 600px;
+    }
+
+    .wrap2 .page1 .row .cell:first-child > .typing {
+        text-align: center;
+        font-size: 12px;
+    }
+    .wrap2 .page1 .row .cell:first-child > .tag {
+        font-size: 12px;
+    }
 }
 
 /* page2 */
@@ -478,6 +530,7 @@ body.bg-active .wrap1 .main .content .concept > div {
     .wrap2 .page2 .part1 .tab-con .tab-list .row .cell .hide-txt {
         display: block;
     }
+
     .hover-txt-box {
         display: none;
     }
@@ -722,7 +775,7 @@ body.bg-active .wrap1 .main .content .concept > div {
     }
 }
 
-@media (max-width:1449px) and (min-width:660px) {
+@media (max-width:1449px) {
     .slider-sbs-1 {
         height: 1000px;
     }
@@ -838,7 +891,7 @@ body.bg-active .wrap1 .main .content .concept > div {
     background-color: #fff;
     width: 5px;
     height: 5px;
-    border-radsius: 50%;
+    border-radius: 50%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
